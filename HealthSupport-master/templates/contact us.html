@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+      <style>
+        * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+}
+section {
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.form-group {
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: rgb(27, 166, 247);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&family=Ubuntu:wght@500&display=swap');
+*{
+padding:0;
+margin:0;
+}
+body{
+font-family: 'Signika', sans-serif;
+height:100%;
+}
+.logo{
+margin-right: 10px;
+}
+
+/*navbar*/
+
+header{
+background-color: #001d27;
+width: 100%;
+padding:0.5% 15%;
+position:fixed;
+z-index: 12;
+}
+nav{
+background-color: #001d27;
+width: 120%
+
+}
+.navbar-brand{
+font-family: 'Ubuntu', sans-serif;
+font-size: 1.5rem;
+color: #fff;
+}
+.navbar-brand:hover{
+color: #fff;
+}
+.nav-link{
+font-size: 19px;
+color: #eeeeee;
+margin: 0 2px;
+}
+.nav-link:hover{
+background-color: #fff;
+border-radius: 8px;
+color: #001d27;
+}
+.custom-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+border-color: rgb(255,255,255,0.5);
+} 
+
+/*Home page*/
+
+h2{
+font-size: 3rem;
+font-weight: bold;
+padding-top: 1.5%;
+}
+p{
+color: #fff;
+font-size: 1.3rem;
+margin-top: 25px;
+}
+.main{
+padding-top: 50px;
+text-align: center;
+color:#005876;
+line-height: 1.5;
+}
+#heading{
+font-size: 4rem;
+font-weight: bold;
+padding-top: 12%;
+}
+.about{
+text-align: left;
+line-height: 2;
+margin-top:10px;
+}
+.about-para{
+margin-top: 10px;
+}
+.carousel-item{
+padding: 5% 15%;
+}
+.carousel-control-prev-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF5C58' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF5C58' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.carousel-indicators li{
+background-color: #FF5C58;
+}
+#ul{
+padding: 1% 0 48px 15%;
+font-size: 1.3rem;
+color: #FF6B6B;
+}
+#header{
+width: 500px;
+}
+/*disease*/
+#disease{
+padding: 3% 15%;
+background-color: #76ddff;
+text-align: center;
+}
+.disease-img{
+margin-top:50px;
+}
+img{
+width: 150px;
+margin: 5% auto;
+}
+.flip-card {
+margin: 3% auto;
+height: 300px;
+perspective: 1000px; 
+}
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+.flip-card-front {
+background-color: white;
+color: #001d27;
+border-radius: 10px;
+}
+.flip-card-back {
+background-color:#001d27;
+color: white;  
+border-radius: 10px;
+transform: rotateY(180deg);
+}
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+}
+.disease-name{
+font-size: 1.8rem;
+font-weight: bold;
+margin: 2%;
+}
+h3{
+color: white;
+font-size: 2rem;
+font-weight: bold;
+}
+.symptoms{
+line-height: 2;
+margin-left: 30px;
+text-align: left;
+color: white;
+font-size: 1rem;
+}
+.predict{
+background-color: white;
+border: 2px solid white;
+border-radius: 5px;
+color: #ff6b6b;
+width: 80px;
+height: 40px;
+}
+.footer{
+padding: 1% 0;
+text-align: center;
+background-color:#001d27;
+color: #ffffff;
+}
+
+/*form*/
+
+.form{
+padding-top: 90px;
+padding: 5% 15% 1%;
+text-align: left;
+font-size: 1.3rem;
+}
+label{
+margin: 25px 0 10px;
+font-weight: bold;
+}
+input[type="radio"] {
+appearance: none;
+display: inline-block;
+width: 25px;
+height: 25px;
+padding: 6px;
+margin-right: 10px;
+margin-left: 70px;
+background-clip: content-box;
+border: 1px solid #bbbbbb;
+background-color: #e7e6e7;
+border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+background-color: #ff6b6b;
+}
+.name{
+display: inline-block;
+margin-top:60px;
+}
+#male,#female{
+color: #ff6b6b;
+font-weight: 100;
+vertical-align: middle;
+}
+input{
+padding-left: 3px;
+border: 2px solid #ff6b6b;
+border-radius: 8px;
+caret-color: #ff6b6b;
+color: #ff6b6b;
+outline-style: none;
+width: 80%;
+}
+hr{
+border: none;
+border-top: 8px dotted #ff6b6b;
+width: 5%;
+margin: 20px auto;
+}
+
+.btn{
+margin: 50px auto;
+}
+.btn-outline-danger{
+color: #FF5C58;
+font-size:1.4rem;
+}
+.btn-outline-danger:hover{
+background-color: #FF5C58;
+}
+.h2{
+font-size: 2rem;
+font-weight: bold;
+}
+.icon{
+width: 64px;
+margin:0 15px 18px 0;
+}
+
+/*result*/
+
+.result{
+display: inline-block;
+width: 500px;
+height: 450px;
+margin:90px auto;
+text-align: center;
+font-size: 1.5rem;
+border: 3px solid #ff5c5b;
+border-radius : 10px;
+color:#ff5c5b;
+}
+.res{
+display: inline-block;
+margin-top:30px;
+font-size : 1.9rem;
+font-weight: 900;
+}
+.card-text{
+color:#001d27;
+
+}
+
+          </style>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <!-- stylesheets -->
+          <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+         crossorigin="anonymous"
+     />
+    
+     <!-- fontawesome -->
+     <script src="https://kit.fontawesome.com/b024a0525a.js" crossorigin="anonymous"></script>
+     <!-- bootstrap scripts -->
+     <script
+         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"
+     ></script>
+     <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+         crossorigin="anonymous"
+     ></script>
+     <!-- tab -->
+     <link rel="icon" type="image" href="../static/images/health-check.png">
+	<title>Arogya Kendra</title>
+	
+
+    </head>
+
+    
+
+    <body>
+      <header> 
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="/" ><i class="fas fa-hand-holding-medical logo"></i>Arogya Kendra</a>
+           <button
+                           class="navbar-toggler custom-toggler"
+                           type="button"
+                           data-toggle="collapse"
+                           data-target="#navbarSupportedContent"
+                           aria-controls="navbarSupportedContent"
+                           aria-expanded="false"
+                           aria-label="Toggle navigation"                          
+                       >
+                           <span class="navbar-toggler-icon"></span>
+                       </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                 <a class="nav-link" href="/home" >Home</a>
+               </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="/heart" >Heart</a>
+                 </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="/liver" >Liver</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="/kidney" >Kidney</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="/cancer" >Breast Cancer</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="/diabetes" >Diabetes</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="/blogs" >Blogs</a>
+                       </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="/livepredictor" >Live Predictor</a>
+                    </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="/contact us" >Contact Us</a>
+                       </li>
+             </ul>
+                     </div>
+           </div>
+        </nav>
+       </header>
+       <section class="main">
+
+        <section>
+            <div class="container">
+              <form action="https://formspree.io/f/mqknzrql" method="POST" id="my-form">
+          
+                <div class="form-group">
+                  <label for="firstName"> First Name</label>
+                  <input type="text" id="firstName" name="firstName">
+                </div>
+          
+                <div class="form-group">
+                  <label for="latsName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName">
+                </div>
+          
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email">
+                </div>
+          
+                <div class="form-group">
+                  <label for="massage">Message</label>
+                  <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                </div>
+          
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+            <div id="status"></div>
+          </section>
+
+
+
+        <script src="" async defer></script>
+    </body>
+</html>
